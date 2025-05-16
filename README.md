@@ -1,7 +1,9 @@
 # Multi-Cloud-Data-Transfer-with-AWS-and-GCP
 
 
-# outline : ![image](https://github.com/user-attachments/assets/83baa5f0-2fd9-4de2-9749-4860f9f050c9)
+# outline :
+
+![image](https://github.com/user-attachments/assets/83baa5f0-2fd9-4de2-9749-4860f9f050c9)
 
 # What is multi-cloud?
 Multi-cloud means spreading your data and services across multiple cloud providers. Companies like this because it means:
@@ -24,6 +26,8 @@ In the search bar at the top of the console, type S3.
 Select S3 from the search results.
 ```
 
+
+
 ![image](https://github.com/user-attachments/assets/6008e725-50ae-470e-ae76-b0140d35ae38)
 
 
@@ -31,7 +35,9 @@ Select S3 from the search results.
 # What kind of files can I upload?
 You can upload virtually any type of file to S3, from documents and images to videos and backups. S3 is versatile and can store any data you need in the cloud!
 
+
 ![image](https://github.com/user-attachments/assets/9917d676-77a3-4b29-8d5e-f6b255f2f94c)
+
 
 # Step2 -  set up your Google Cloud Platform account.
 
@@ -40,9 +46,12 @@ You can upload virtually any type of file to S3, from documents and images to vi
 Turns out, there's a handy service in GCP that can help us transfer data from AWS to GCP
 Create a new transfer job in GCP's Storage Transfer Service.
 
+
 ![image](https://github.com/user-attachments/assets/7e77eee6-5f6b-42e9-9ea4-a1eaa7f7e50d)
 
+
 In the GCP console, on the left look for storage and click on storage transfer
+
 
 ![image](https://github.com/user-attachments/assets/8bd6c220-74e7-4c48-8782-938c51ff7132)
 
@@ -61,19 +70,23 @@ Head back to the AWS Management Console
 In the search bar, type IAM and select IAM.
 create a role: 
 
+
 ![image](https://github.com/user-attachments/assets/5d06fbf6-fa18-4048-98e0-fc3220f113e9)
 
 edit the JSON file, and replacing the subject_id wiith gcp api: 
 
+
 ![image](https://github.com/user-attachments/assets/4188c6af-3de6-486d-a626-3a0b3627140a)
 
 create role: 
+
 
 ![image](https://github.com/user-attachments/assets/8e37cf74-a92a-49a5-98db-494d3d205fb5)
 
  we'll use this role's to complete the S3 source configuration in GCP.
 
  #Step5 - Transfer Your Objects from S3 to GCS
+
  ![image](https://github.com/user-attachments/assets/dfcd8bf4-b427-459f-8027-1b313999c6ac)
 
 copy the arn: 
@@ -81,16 +94,20 @@ copy the arn:
 ![image](https://github.com/user-attachments/assets/a4f28380-57c3-4b19-9943-defe6c982d44)
 
 paste it in the gcp: 
+
 ![image](https://github.com/user-attachments/assets/b92697c0-149c-4113-9674-d05469b439fb)
 
 
 make sure the region is same as the one you had in the aws console: 
+
 ![image](https://github.com/user-attachments/assets/653bf57b-1c7b-44a6-825b-e98e4fee32b6)
 
 now that you've create the transfer job :
+
 ![image](https://github.com/user-attachments/assets/a151da0f-8235-4402-b5fc-f1c221d9c642)
 
 in the gcp console, hover to cloud->buckets :
+
 ![image](https://github.com/user-attachments/assets/58e79110-69f9-41d1-a02e-17e905483fd4)
 
 # You should see the files from your S3 bucket listed in your GCP Cloud Storage bucket:
