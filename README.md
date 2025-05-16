@@ -14,10 +14,11 @@ More flexibility – You can make the most of each provider's different strength
 
 Cost savings – Since pricing varies across cloud platforms, multi-cloud lets you optimize on costs.
 
-# Step1 - Store Data in an S3 Bucket
+# Step 1 - Store Data in an S3 Bucket
  This bucket will serve as the source for our data transfer to GCP Cloud Storage.
 
-!. Create a new S3 bucket.
+ Create a new S3 bucket.
+ 
 ```
 Navigate to S3
 First, let's find the S3 service in the AWS Management Console.
@@ -39,9 +40,9 @@ You can upload virtually any type of file to S3, from documents and images to vi
 ![image](https://github.com/user-attachments/assets/9917d676-77a3-4b29-8d5e-f6b255f2f94c)
 
 
-# Step2 -  set up your Google Cloud Platform account.
+# Step 2 -  set up your Google Cloud Platform account.
 
-# Step3- Set Up a Storage Transfer from AWS to GCP
+# Step 3- Set Up a Storage Transfer from AWS to GCP
 
 Turns out, there's a handy service in GCP that can help us transfer data from AWS to GCP
 Create a new transfer job in GCP's Storage Transfer Service.
@@ -63,7 +64,7 @@ Storage Transfer Service handles authentication between the two platforms, start
 ![image](https://github.com/user-attachments/assets/d947d83b-c8cd-451e-8e56-6dd3287b95a9)
 
 
-# Step4- Create a custom IAM role for GCP.
+# Step 4 - Create a custom IAM role for GCP.
 
 Let's head to the IAM console to create our role.
 Head back to the AWS Management Console
