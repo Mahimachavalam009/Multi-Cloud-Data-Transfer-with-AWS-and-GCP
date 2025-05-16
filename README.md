@@ -86,7 +86,7 @@ create role:
 
  we'll use this role's to complete the S3 source configuration in GCP.
 
- #Step5 - Transfer Your Objects from S3 to GCS
+ # Step 5 - Transfer Your Objects from S3 to GCS
 
  ![image](https://github.com/user-attachments/assets/dfcd8bf4-b427-459f-8027-1b313999c6ac)
 
