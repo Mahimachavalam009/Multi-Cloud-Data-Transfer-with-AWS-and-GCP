@@ -1,11 +1,14 @@
 # Multi-Cloud-Data-Transfer-with-AWS-and-GCP
 
 
-# outline :
+# Outline :
 
 ![image](https://github.com/user-attachments/assets/83baa5f0-2fd9-4de2-9749-4860f9f050c9)
 
+
 # What is multi-cloud?
+
+
 Multi-cloud means spreading your data and services across multiple cloud providers. Companies like this because it means:
 
 Higher reliability – If AWS has an outage, GCP can keep your apps running and have a copy of your data.
